@@ -10,9 +10,6 @@ echo -e "\nDeleting files 14 days or older\n"
 
 FILE=find /var/log -name '*.log'  -type f -mtime +14 -exec ls rm -rf {} \;
 
-for ${FILE}
-do
- -exec rm -f
-done
+
 
 
